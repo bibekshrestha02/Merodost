@@ -8,11 +8,11 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "build21": "cd client && npm start",
+    "client": "cd client && npm start",
     "install-client": "cd client && npm install",
-    "frontend": "npm  start --prefix client",
-    "build": "cd client/ && npm  install && npm run build",
-    "start": "npm  start --prefix server",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "build": "cd client && npm run build",
+    "start": "npm start --prefix server",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "author": "Bibek Shrestha",
