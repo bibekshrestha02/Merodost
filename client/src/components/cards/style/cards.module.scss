@@ -1,0 +1,45 @@
+@import "./../../../styles/color";
+.Cards {
+  margin-top: 80px;
+  .itemsAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rows {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: -3px -3px 5px #ffffff, 3px 3px 5px #000000;
+  }
+}
+.cardbody {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  height: 150px;
+  padding-bottom: none;
+  overflow: hidden;
+  background-color: $shapeBgColor;
+  .title {
+    font-weight: bold;
+    color: $mainColor;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+}

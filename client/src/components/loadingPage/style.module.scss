@@ -1,0 +1,53 @@
+@import "./../../styles/color";
+.LoadingPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: $shapeBgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .spinnerbox {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  /* PULSE BUBBLES */
+
+  .pulsecontainer {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pulsebubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $mainColor;
+  }
+
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.25;
+      transform: scale(0.75);
+    }
+  }
+  .pulsebubble1 {
+    animation: pulse 0.4s ease 0s infinite alternate;
+  }
+  .pulsebubble2 {
+    animation: pulse 0.4s ease 0.2s infinite alternate;
+  }
+  .pulsebubble3 {
+    animation: pulse 0.4s ease 0.4s infinite alternate;
+  }
+}

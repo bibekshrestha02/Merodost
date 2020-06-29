@@ -1,0 +1,36 @@
+@import "./../../../styles/color";
+.footer {
+  background-color: $footerBgColor;
+}
+.icon {
+  background: $mainColor;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.links {
+  margin-top: 5px;
+  a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.copyRight {
+  color: $footerTextColor;
+  span {
+    display: block;
+    font-size: 16px;
+    @media screen and (max-width: (360px)) {
+      font-size: 13px;
+    }
+  }
+}

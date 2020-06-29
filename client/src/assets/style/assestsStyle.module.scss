@@ -1,0 +1,12 @@
+@import "./../../styles/color";
+.Title {
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  font-size: 30px;
+  position: relative;
+  letter-spacing: 0.5px;
+  span {
+    border-bottom: 3px solid $mainColor;
+  }
+}

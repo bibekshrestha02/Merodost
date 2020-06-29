@@ -1,0 +1,30 @@
+@import "./color";
+.blogs {
+  width: 60vw;
+  margin: auto;
+  @media screen and (max-width: "460px") {
+    width: 90vw;
+  }
+
+  .image {
+    margin: auto;
+  }
+  .paragraph {
+    p {
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 1.667;
+      margin-bottom: 1rem;
+      text-align: justify;
+      text-justify: inter-word;
+      color: #5e5b5b;
+      @media screen and (max-width: "460px") {
+        font-weight: 150;
+        font-size: 18px;
+        line-height: 1.667;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
