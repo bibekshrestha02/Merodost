@@ -33,12 +33,13 @@ mongoose.connection.on("connected", () => {
 app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 app.use(cors());
-app.use(express.static("client/build"));
 // app.use(morgan("tiny"));
 app.use("/api", BlogRoute);
 app.use("/contact", ContactRoute);
 app.use("/user", UserRoute);
 if (process.env.NODE_ENV === "production") {
+  app.use(express.static("../client/build"));
+
   app.get("*", (req, res) => {
     res.sendFile(
       path.resolve(__dirname, "../../client", "build", "index.html")
