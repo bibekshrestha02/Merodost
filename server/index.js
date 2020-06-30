@@ -8,7 +8,7 @@ const app = express();
 const morgan = require("morgan");
 const BlogRoute = require("./router/blogRoute");
 const ContactRoute = require("./router/contactRoute");
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 const DB = process.env.mongodbDatabase.replace(
   "<password>",
   process.env.mongodbPassword

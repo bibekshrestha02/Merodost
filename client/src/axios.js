@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/",
+  baseURL: "/",
 });
 const token = `Bearer ${localStorage.getItem("token")}`;
 instance.defaults.headers.common["Authorization"] = token;
