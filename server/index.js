@@ -40,10 +40,10 @@ app.use("/contact", ContactRoute);
 app.use("/user", UserRoute);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("../client/build"));
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client", "build", "index.html")); // relative path
-  });
 }
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client", "build", "index.html")); // relative path
+});
 
 app.listen(port, () => {
   console.log(`Server Started on port ${port}`);
