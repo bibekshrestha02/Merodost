@@ -12,7 +12,7 @@
     "install-client": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "start": "cd server && node index.js",
+    "start": "cd server && npm install && node index.js",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "author": "Bibek Shrestha",
