@@ -29,15 +29,16 @@ mongoose.connect(
 mongoose.connection.on("connected", () => {
   console.log("Mongoose is conntected");
 });
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
 app.use(cors());
-app.use(morgan("tiny"));
+app.use(express.static("client/build"));
+// app.use(morgan("tiny"));
 app.use("/api", BlogRoute);
 app.use("/contact", ContactRoute);
 app.use("/user", UserRoute);
 if (process.env.NODE_ENV === "production") {
-  // app.use(express.static("client/build"));
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
   });
