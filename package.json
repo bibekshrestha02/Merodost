@@ -10,9 +10,9 @@
   "scripts": {
     "client": "cd client && npm start",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
     "build": "cd client && npm run build",
-    "start": "npm start --prefix server",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "npm run start --prefix server",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "author": "Bibek Shrestha",
