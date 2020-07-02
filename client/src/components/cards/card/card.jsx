@@ -10,7 +10,7 @@ export default function Card(props) {
         alt={props.title}
         width='200px'
       />
-      <div className={style.cardbody}>
+      <div className={`p-2 ${style.cardbody}`}>
         <h5 className={`card-title ${style.title}`}>
           {`${props.title}`.toLocaleUpperCase()}
         </h5>
