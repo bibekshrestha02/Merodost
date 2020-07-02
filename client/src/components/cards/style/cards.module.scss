@@ -31,7 +31,6 @@
 .cardbody {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
   height: 150px;
   padding-bottom: none;
   overflow: hidden;
@@ -41,10 +40,5 @@
     color: $mainColor;
     font-size: 16px;
     letter-spacing: 0.5px;
-  }
-  p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
