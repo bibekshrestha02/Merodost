@@ -10,13 +10,13 @@ export default function Card(props) {
         alt={props.title}
         width='200px'
       />
-      <div className={`pt-2 pl-2 pr-2 ${style.cardbody}`}>
+      <div className={`pt-1 pl-1 pr-1 ${style.cardbody}`}>
         <h5 className={`card-title ${style.title}`}>
           {`${props.title}`.toLocaleUpperCase()}
         </h5>
         <p className='card-text'>{props.summery}</p>
       </div>
-      <div className='pl-3'>
+      <div className='pl-1'>
         <Link
           to={{
             pathname: "/blog",
