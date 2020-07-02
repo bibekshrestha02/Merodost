@@ -11,7 +11,7 @@ export default function Card(props) {
         width='200px'
       />
       <div className={`pt-1 pl-1 pr-1 ${style.cardbody}`}>
-        <h5 className={`card-title ${style.title}`}>
+        <h5 className={`${style.title}`}>
           {`${props.title}`.toLocaleUpperCase()}
         </h5>
         <p className='card-text'>{props.summery}</p>
